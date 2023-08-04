@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{!-- <link rel="stylesheet" href="slide.css"> --}}
+    <style>
+        body{
+            width: 100%;
+        }
+
+    .slideshow {
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    .slide-wrapper {
+    width: 3000px;
+    animation: slide 18s infinite;
+    }
+    .image-container{
+    margin-top: 50px;
+    float: left;
+    height: 500px;
+    width: 100%;
+    }
+    .image-container:nth-child(1) {
+    background-image: url("https://th.bing.com/th/id/R.70cdddd9a30375bb9df5804bc87cefc7?rik=9sQyMWhJZ8ro8w&riu=http%3a%2f%2fcdn.christravelblog.com%2fwp-content%2fuploads%2f2020%2f03%2fIMG_0521_Egypt_Cairo_Garbage_City_006-1024x683.jpg&ehk=K4d5bWFmnY2aiwpb1YV1QDQcOBRBHA84dbOBidw1CEY%3d&risl=&pid=ImgRaw&r=0") ;
+    }
+    .image-container:nth-child(2) {
+        background-image: url("https://lecho-circulaire.com/wp-content/uploads/2019/04/ferrailles.jpg");
+    }
+    .image-container:nth-child(3) {
+    background-image: url("https://static.toiimg.com/thumb/msid-56848515,width-1070,height-580,imgsize-46386,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg") ;
+    }
+    .image-container:nth-child(4) {
+    background-image: url("images/img3.jpg") ;
+    }
+    @keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    70% {margin-left: -1456px;}
+    80% {margin-left: -2184px;}
+    90% {margin-left: -2184px;}
+    }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slide-wrapper">
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+        <div class="image-container"></div>
+        </div>
+        </div>
+</body>
+</html>

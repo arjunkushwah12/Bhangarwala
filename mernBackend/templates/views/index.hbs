@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+      margin: 0;
+      padding: 0;
+      height: 1500px;
+      background: #4b200489;
+      width: 100%;
+      
+        
+    }
+    .card {
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px;
+  border: 2px solid rgb(58, 56, 56);
+  padding: 2px;
+  margin: 54px;
+  background-color: rgb(128, 125, 121);
+}
+
+.rahl
+{
+    display: flex;
+    position:relative;
+    
+}
+.rp
+{
+  display: flex;
+  position: relative;
+
+
+}
+.rss
+{
+  display: flex;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img {
+  border-radius: 5px 5px 0 0;
+}
+img {
+  height: 200px;
+  width: 100%;
+  background-color: powderblue;
+}
+.container {
+  padding: 1px 12px;
+}
+
+     .sellbox{
+       text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    height: 165px;
+    width: 355px;
+    margin: 28px 100px;
+    background: #d86309;
+    padding: 60px;
+    border-radius: 50px;
+}
+    .inside{
+       position: relative;
+    background: rgb(237, 237, 237);
+    height: 150px;
+    width: 330px;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 20px;
+    }
+.container a{
+        text-decoration: none;
+        align-items: center;
+        color: rgb(23, 211, 154);
+}
+ footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100vw;
+    padding-top:1px;
+    color: #fff;
+}
+
+
+.footer-content{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+   </style>
+</head>
+<body>
+  {{> navbar}}
+  <div class="slide">
+  {{> slideimage}}
+
+  </div>
+
+  {{!-- <div class="sellbox">
+            <a href="/sellscrap">
+                <div class="inside">Sell Scrap </div></a>
+
+  </div> --}}
+  <div class="rahl">
+    <div class="card">
+        <img src="images/ironman.jpg" alt="Avatar" >
+        {{!-- sell scrap --}}
+        <div class="container">
+          <h4><b><center><a href="/sellscrap">Sell Scrap</a></center></b></h4> 
+          {{!-- <p><center>Rs.100.00/kg</center></p>  --}}
+        </div>
+      </div>
+      <div class="card">
+          <img src="images/plastic.jpg" alt="Avatar" >
+          <div class="container">
+             {{!-- <h4><b><center>Steel</center></b></h4>  --}}
+            <p><center><a href="/scrapPrice">View Scrap Prices</a></center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/cal.jpg" alt="Avatar" >
+          <div class="container">
+             {{!-- <h4><b><center>Plastic bootle</center></b></h4>  --}}
+            <p><center><a href="/Calculator">Calculate scrap amount</a></center></p> 
+          </div>
+        </div>
+        <br>
+
+        {{!-- <center><h1>Scrap Prices</h1>
+</center> --}}
+{{!-- <div class="rahl">
+    <div class="card">
+        <img src="images/alu.jpg" alt="Avatar" >
+        <div class="container">
+          <h4><b><center>Alminimum</center></b></h4> 
+          <p><center>Rs.100.00/kg</center></p> 
+        </div>
+      </div>
+      <div class="card">
+          <img src="images/steel.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Steel</center></b></h4> 
+            <p><center>Rs.45.00/kg</center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/plastic.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Plastic bootle</center></b></h4> 
+            <p><center>Rs.12.00/kg</center></p> 
+          </div>
+        </div>
+
+
+      </div> --}}
+      
+      {{!-- <br>
+
+
+
+        <div class="rss">
+         <div class="card">
+          <img src="images/newspaper.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Newspaper</center></b></h4> 
+            <p><center>Rs.20.00/kg</center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/cant.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Can</center></b></h4> 
+            <p><center>Rs.35.00/kg</center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/motherboard.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Motherboard</center></b></h4> 
+            <p><center>Rs.25.00/piece</center></p> 
+          </div>
+        </div>
+        </div>
+        <br>
+
+        <div class="rp"><div class="card">
+          <img src="images/iron.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Iron</center></b></h4> 
+            <p><center>Rs.25.00/kg</center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/glassbottle.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>Glass bottle</center></b></h4> 
+            <p><center>Rs.10.00/kg</center></p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/e waste.jpg" alt="Avatar" >
+          <div class="container">
+            <h4><b><center>E-Waste</center></b></h4> 
+            <p><center>Rs.12.00/kg</center></p> 
+          </div>
+        </div></div> --}}
+
+
+  <footer>
+        <div class="footer-content">
+            <!--add all information -->
+            <h3>Bhangarwala</h3>
+            <ul class="socials">
+                <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li> -->
+             </ul>
+        </div>
+
+</footer>
+
+</body>
+</html>
